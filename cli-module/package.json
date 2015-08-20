@@ -1,0 +1,26 @@
+{
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "version": "0.0.0",
+  "keywords": [
+    ""
+  ],
+  "repository": "<%= githubUsername %>/<%= name %>",
+  "dependencies": {
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "mocha": "^2.2.5"
+  },
+  "main": "index.es5.js",
+  "bin": "cli.es5.js",
+  "scripts": {
+    "test": "mocha --require babel/register",
+    "transpile": "babel --stage 0 index.js > index.es5.js && babel --stage 0 cli.js > cli.es5.js",
+    "prepublish": "npm run transpile",
+    "postpublish": "rm -rf *.es5.js"
+  },
+  "author": "<%= authorName %> <<%= authorEmail %>> (<%= authorWebsite %>)",
+  "license": "MIT"
+}
