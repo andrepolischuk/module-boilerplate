@@ -19,7 +19,7 @@
     "test": "mocha --require babel/register",
     "transpile": "babel --stage 0 index.js --out-file index.es5.js",
     "prepublish": "npm run transpile",
-    "postpublish": "rimraf *.es5.js"
+    "postpublish": "rimraf index.es5.js"
   },
   "author": "<%= authorName %> <<%= authorEmail %>> (<%= authorWebsite %>)",
   "license": "MIT"
