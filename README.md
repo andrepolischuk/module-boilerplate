@@ -1,6 +1,6 @@
 # module-boilerplate
 
-> Boilerplate for es6 node and browser modules
+> Boilerplate for ES2015 node and browser modules
 
 With CLI support
 
