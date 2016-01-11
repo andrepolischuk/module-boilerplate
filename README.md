@@ -2,7 +2,7 @@
 
 > Boilerplate for ES2015 node and browser modules
 
-With CLI support
+With CLI support.
 
 ## Usage
 
@@ -32,7 +32,7 @@ git init
 git commit -am "Initial commit"
 ```
 
-Also you can try [Yeoman generator][generator]
+Also you can try [Yeoman generator][generator].
 
 ## License
 
