@@ -22,7 +22,7 @@
     "pretest": "npm run prepublish",
     "test": "ava",
     "tdd": "chokidar \"*.js\" --ignore \"*.es5.js\" --command \"npm run test\" --initial",
-    "prepublish": "babel --presets es2015,stage-0 index.js --out-file index.es5.js",
+    "prepublish": "babel index.js --out-file index.es5.js",
     "postpublish": "rimraf index.es5.js && git push --follow-tags"
   },
   "author": "<%= authorName %> <<%= authorEmail %>> (<%= authorWebsite %>)",
